@@ -8,20 +8,42 @@ NOT: Kod her türlü n değeri için çalışmalıdır, sabit bir sayı değildi
 
 
 
-function asalSayilar(n) {
-    let asalSayilarDizisi = [];
-    for (let i = 1; i <= n; i++) {
-        for (let k = 2; k <= i; k++) {
-            if (i % k == 0) {
-                break;
-            } else {
-                console.log(i);
-                // asalSayilarDizisi.push(i);
-                // return asalSayilarDizisi;
-            }
-        }    
-    }
-}
-// console.log(asalSayilar(7));
+// function asalSayilar(n) {
+//     let asalSayilarDizisi = [];
+//     let i;
+//     let k;
+//     let count = 0;
+//     for (i = 1; i <= n; i++) {
+//         for (k = 1; k <= i; k++) {
+//             if (k % i == 0) {
+//                 count++;
+//                 if (count == 2) {
+//                     break;
+//                 }
+//             }
+//         }
+//         asalSayilarDizisi.push(i);
+//     }
+//     return asalSayilarDizisi;
+// }
+// console.log(asalSayilar(11));
 
 
+
+
+// function asalSayilar(n) {
+//     let asalSayilarDizisi = [];
+//     let i=2
+//     while (i <= n) {
+//         let k = 2;
+//             while (k < i) {
+//                 if (i % k != 0) {
+//                     k++;
+//                 }
+//             }
+//         asalSayilarDizisi.push(i);
+//         i++;
+//     }
+//     return asalSayilarDizisi;
+// }
+// console.log(asalSayilar(10);
