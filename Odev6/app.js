@@ -24,10 +24,8 @@ webBrowsers.addEventListener("click", function (e) {
 
     if (value == "edge") {
         alert("Edge browser kullanıyorsunuz.");
-    } else if (value == "chrome" || value == "firefox" || value == "safari" || value == "opera"); {
+    } else if (value == "chrome" || value == "firefox" || value == "safari" || value == "opera") {
         alert('Tamam bunları destekliyoruz.');
-    } else {
-        alert('Umarım sayfanız güzel görünüyordur.')
-    }
-    return;
+    } else
+        alert('Umarım sayfanız güzel görünüyordur.');
 })
