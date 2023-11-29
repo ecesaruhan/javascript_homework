@@ -37,7 +37,7 @@ let n;
 let capital;
 for (n = 0; n < products.length; n++) {
     capital = products[n].toUpperCase();
-    console.log(capital);
+    // console.log(capital);
 }
 
 //5-urunler listesinde samsung geçen kaç ürün vardır?
@@ -47,8 +47,42 @@ for (n = 0; n < products.length; n++) {
         count++;
     }
 }
-console.log(count);
+// console.log(count);
 
 
+let students = [
+    { "ad": "yiğit", "soyad": "bilgi", "notlar": [60, 70, 60] },
+    { "ad": "ada", "soyad": "bilgi", "notlar": [80, 70, 80] },
+    { "ad": "çınar", "soyad": "turan", "notlar": [10, 20, 60] }
+];
 
+//6- ogrenciler listesindeki her öğrencinin not ortalaması ve başarı durumlarını yazdırınız.
+let averageGrade;
+let k;
+let g;;
+let totals = 0;
+let grade;
+
+for (k = 0; k < students.length; k++) {
+    for (g = 0; g < 3; g++) {
+        grade = Number(students[k].notlar[g]);
+        totals += grade;
+        averageGrade = totals / 3;
+    }
+    totals = 0;
+    if (averageGrade > 60) {
+        console.log("Not ortalaması: " + averageGrade.toFixed(2) + " - Başarılı");
+    } else console.log("Not ortalaması: " + averageGrade.toFixed(2) + " - Başarısız");
+}
+
+//7- tüm öğrencilerin not ortalaması kaçtır?
+
+for (k = 0; k < students.length; k++) {
+    for (g = 0; g < 3; g++) {
+        grade = Number(students[k].notlar[g]);
+        totals += grade;
+    }
+    averageGrade = totals / 9;
+}
+console.log("Tüm öğrencilerin not ortalaması: " + averageGrade.toFixed(2));
 
